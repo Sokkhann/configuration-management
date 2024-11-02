@@ -2,9 +2,11 @@ spring:
   application:
     name: config-server
   profiles:
-    active: native
+    active: git # it can be native, git, and vault
   cloud:
     config:
       server:
-        native:
-          search-locations: file:///D:/ISTAD/Expert/part II/self practice/configuration-management/yelp-config/{application}
+        git:
+          uri: https://github.com/Sokkhann/configuration-management.git
+          default-label: main
+          search-paths: '/yelp-config/**'
