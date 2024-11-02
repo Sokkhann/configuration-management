@@ -9,4 +9,4 @@ spring:
         git:
           uri: https://github.com/Sokkhann/configuration-management.git
           default-label: main
-          search-paths: '/yelp-config/**'
+          search-paths: '/yelp-config/**' #this is for search paths
